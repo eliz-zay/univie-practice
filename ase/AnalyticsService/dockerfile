@@ -1,0 +1,19 @@
+# syntax=docker/dockerfile:1
+
+FROM node:18-alpine
+ENV NODE_ENV=production
+
+WORKDIR /app
+
+COPY ["./services/AnalyticsService/package.json", "./services/AnalyticsService/package-lock.json*", "./"]
+
+RUN npm install --production
+COPY ["./services/AnalyticsService/", "./"]
+COPY ["./libs", "./libs"]
+WORKDIR /app/libs
+RUN npm install
+WORKDIR /app
+COPY ["./services/AnalyticsService/tsconfig.prod.json", "./tsconfig.json"]
+RUN npm run build
+RUN sed -i 's/\r$//' ./run.sh  && chmod +x ./run.sh
+ENTRYPOINT ["sh", "-c", "./run.sh"]

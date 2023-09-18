@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "baseUrl": "./",
+        "paths": {
+            "@queuemanager": ["./libs/queue-manager/src/index.ts"],
+        }
+    },
+    "exclude": ["test", "node_modules", "jest.config.ts", "jest.integration.config.ts", "jest.unit.config.ts"],
+    "lib": ["es2015"],
+}
