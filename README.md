@@ -9,8 +9,8 @@ In this repository I collect all the practices completed during my Master's prog
 
 ## Winter semester 2023
 
-- **Practicum 1: Go-ethereum App based on Proof-of-Authority** ([source code](./p1-geth-app-poa/))   
-    The aim of this project was to create a secure platform which facilitates decision making and provides persistent storage for a management board of a company within the Go-ethereum framework based on a Proof-of-Authority concept.
+- **Practicum 1: Go-ethereum App based on Smart Contracts and Proof-of-Authority** ([source code](./p1-geth-app-poa/))   
+    The aim of this project was to create a secure platform which facilitates decision making and provides persistent storage for a management board of a company within the Go-ethereum framework based on a Proof-of-Authority concept and Solidity Smart Contracts.
 
 ## Summer semester 2023
 

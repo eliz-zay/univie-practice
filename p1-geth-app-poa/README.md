@@ -1,6 +1,6 @@
-# Geth app based on Proof-of-Authority
+# Geth app based on Smart Contracts and Proof-of-Authority
 
-The aim of this project was to create a secure platform which facilitates decision making and provides persistent storage for a management board of a company within the Go-ethereum framework based on a Proof-of-Authority concept.
+The aim of this project was to create a secure platform which facilitates decision making and provides persistent storage for a management board of a company within the Go-ethereum framework based on a Proof-of-Authority concept and Solidity Smart Contracts.
 
 ## Project structure
 
